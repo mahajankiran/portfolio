@@ -37,9 +37,7 @@ body {
 }
 
 .navbar-nav {
-    margin: auto!important;
-    height:10vh;
-
+    margin: auto !important;
 }
 
 .navbar-collapse {
@@ -47,16 +45,16 @@ body {
 }
 
 .navbar .navbar-nav .nav-link {
-    color:  #1D4350;
+    color: #1D4350;
     font-weight: 600;
-    margin-right:20px !important;
+    margin-right: 20px !important;
 
 
 }
 
-.navbar .navbar-nav .nav-link:hover{
+.navbar .navbar-nav .nav-link:hover {
     background: #1D4350;
-    color:#fff;
+    color: #fff;
 }
 
 .name::after {
@@ -90,45 +88,47 @@ body {
     overflow:auto;
 } */
 
-.main-container{
-      width:100%;
-    margin:auto;
+.main-container {
+    width: 100%;
+    margin: auto;
 
-    overflow:auto;
-    height:90vh;
-    padding:20px;
+    overflow: auto;
+    height: 90vh;
+    padding: 20px;
     display: grid;
-    grid-template-columns:repeat(2,1fr);
-    
+    grid-template-columns: repeat(2, 1fr);
+
     /* grid-gap: 1rem; */
 }
 
-.main-container .portfolio-content{
+.main-container .portfolio-content {
 
     background: #fff;
-     display: flex;
+    display: flex;
     flex-direction: column;
     /* align-items: center; */
     justify-content: center;
-    padding:50px;
+    padding: 50px;
     /* background: #2a5298 ; */
 
 }
 
-.main-container .portfolio-content h1{
+.main-container .portfolio-content h1 {
 
-    font-size:8vh !important;
+    font-size: 8vh !important;
     color: #2a5298;
     /* color:#fff; */
 
 }
-.main-container .portfolio-content h3{
 
-    font-size:5vh !important;
-    color:rgba(0, 0, 0, .5);
+.main-container .portfolio-content h3 {
+
+    font-size: 5vh !important;
+    color: rgba(0, 0, 0, .5);
 
 }
-.main-container .portfolio-image{
+
+.main-container .portfolio-image {
 
     background: #fff;
     display: flex;
@@ -138,9 +138,9 @@ body {
 
 }
 
-.main-container .portfolio-image img{
-    width:80%;
-    height:80%;
+.main-container .portfolio-image img {
+    width: 80%;
+    height: 80%;
 }
 
 
@@ -336,20 +336,21 @@ a .btn-git:focus {
         height: 45vh;
     }
 
-    .main-container{
+    .main-container {
 
         display: block;
-        
+
     }
 
-   
+
 
 
 }
-@media only screen and (min-width:992px) {
-   
 
-/* .navbar-nav{
+@media only screen and (min-width:992px) {
+
+
+    /* .navbar-nav{
     margin-right: 200px !important;
 }
 
@@ -358,19 +359,20 @@ a .btn-git:focus {
 } */
 }
 
-@media only screen and (max-width:380px){
-    .projects-container{
-        width:360px;
+@media only screen and (max-width:380px) {
+    .projects-container {
+        width: 360px;
     }
 
     .main-container {
-        margin:5px;
-        padding:10px;
+        margin: 5px;
+        padding: 10px;
     }
 
-    .main-container .portfolio-content{
+    .main-container .portfolio-content {
         align-items: center;
     }
+
     .main-container .portfolio-content h1 {
         font-size: 30px !important;
     }
@@ -378,5 +380,5 @@ a .btn-git:focus {
     .main-container .portfolio-content h3 {
         font-size: 20px !important;
     }
-    
+
 }
