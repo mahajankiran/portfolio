@@ -82,17 +82,18 @@ body {
     padding: 0px 5px !important;
 }
 
-.main-container{
+/* .main-container{
     max-width:100%;
     display:flex;
     justify-content: center;
     align-items: center;
-}
+    overflow:auto;
+} */
 
 .main-container{
       width:100%;
     margin:auto;
-    /* background: #2a5298; */
+
     overflow:auto;
     height:90vh;
     padding:20px;
@@ -357,7 +358,7 @@ a .btn-git:focus {
 } */
 }
 
-@media only screen and (max-width:362px){
+@media only screen and (max-width:380px){
     .projects-container{
         width:360px;
     }
