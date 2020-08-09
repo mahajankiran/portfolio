@@ -19,22 +19,23 @@ body {
 
 }
 
-.navbar-brand {
+/* .navbar-brand {
     margin-left: 30px !important;
-    color: white !important;
+    color:  !important;
     font-family: 'Dancing Script', cursive;
     font-size: 2rem;
-}
+} */
 
 
 
 .navbar {
-    background: black;
+    background: transparent;
 
 }
 
 .navbar-nav {
-    margin-right: 140px !important;
+    margin-left: auto!important;
+
 }
 
 .navbar-collapse {
@@ -42,25 +43,10 @@ body {
 }
 
 .navbar .navbar-nav .nav-link {
-    color: white;
-    font-weight: 300;
+    color: rgba(0,0,0,0.3);
+    font-weight: 600;
+    margin-right:20px !important;
 
-}
-
-.navbar .navbar-nav .nav-link:hover {
-
-
-    color: cyan !important;
-
-}
-
-.name {
-    position: relative;
-    color: #12c2e9;
-}
-
-.text {
-    font-size: 50px;
 }
 
 .name::after {
@@ -80,7 +66,7 @@ body {
 
 
 .navbar-toggler {
-    background-color: #12c2e9;
+    /* background-color: #12c2e9; */
     border: none !important;
     outline: none !important;
     padding: 0px 5px !important;
@@ -90,7 +76,7 @@ body {
 
 .main-container {
     /* position: relative; */
-    background: url('./images/dark.jpg');
+
     background-size: cover;
     background-repeat: no-repeat;
     object-fit: center;
@@ -127,40 +113,7 @@ body {
 }
 
 
-.profile {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-right: 0px;
-    padding-left: 0px;
-    height: 80%;
-    z-index: 3;
 
-
-}
-
-
-.profile .card {
-    height: 350px !important;
-    width: 250px !important;
-    position: relative !important;
-    transition: .5s !important;
-    /* border: 2px solid aquamarine !important; */
-    box-shadow: 3px 3px 10px rgba(255, 255, 255, 0.5), -3px -3px 10px rgba(255, 255, 255, 0.5) !important;
-
-
-}
-
-
-
-.profileimage {
-    border-radius: 50%;
-    position: absolute;
-    top: -39px;
-    left: 82px;
-    border: 2px solid #fff;
-    box-shadow: 3px 3px 10px cyan, -3px -3px 10px cyan !important;
-}
 
 .heading {
     font-size: 0.9rem;
@@ -199,15 +152,15 @@ body {
 
 .main-projects {
     height: 30vh;
-    width:100%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
     padding: 0.5rem;
-    position:relative;
-    overflow:hidden;
+    position: relative;
+    overflow: hidden;
 }
 
 .project-image {
@@ -222,32 +175,32 @@ body {
     color: #0b8793;
     font-weight: bold;
     position: relative
+}
+
+.circle1 {
+    position: absolute;
+    width: 50vh;
+    height: 50vh;
+    left: -110px;
+    top: -150px;
+    background: #12c2e9;
+    opacity: 0.2;
+    border-radius: 50%;
+    z-index: -1;
+
 
 }
 
- .circle1{
-    position:absolute;
-    width:50vh;
-    height:50vh;
-    left:-110px;
-    top:-150px;
-    background:#12c2e9;
-    opacity:0.2;
+.circle2 {
+    position: absolute;
+    width: 100vh;
+    height: 100vh;
+    right: -200px;
+    top: -530px;
+    background: #12c2e9;
+    opacity: 0.2;
     border-radius: 50%;
-    z-index:-1;
-    
-
-}
-.circle2{
-    position:absolute;
-    width:100vh;
-    height:100vh;
-    right:-200px;
-    top:-530px;
-    background:#12c2e9;
-    opacity:0.2;
-    border-radius: 50%;
-    z-index:-1;
+    z-index: -1;
     overflow: none;
 
 
@@ -257,24 +210,24 @@ body {
     position: absolute;
     width: 25%;
     height: 3px;
-    top:110%;
-    left:30%;
-    content:'';
+    top: 110%;
+    left: 30%;
+    content: '';
     background: aqua;
-    border:2px solid #0b8793;
+    border: 2px solid #0b8793;
 }
 
 .main-projects h1::before {
     position: absolute;
     width: 20vh;
     height: 20vh;
-    top:-50px;
-    left:-115px;
-    content:'';
+    top: -50px;
+    left: -115px;
+    content: '';
     background: #12c2e9;
-    opacity:.1;
-    border-radius:50%;
-   
+    opacity: .1;
+    border-radius: 50%;
+
 
 }
 
@@ -310,7 +263,7 @@ body {
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 0.8rem;
     margin-bottom: 4rem;
-    
+
 
 
 }
@@ -370,17 +323,24 @@ a .btn-git:focus {
 
     .projects-container {
         max-width: 970px;
-        margin:0;
-    }
-    .circle1{
-        width:40vh;
-        height:40vh;
+        margin: 0;
     }
 
-    .circle2{
-        width:45vh;
-        height:45vh;
+    .circle1 {
+        width: 40vh;
+        height: 40vh;
+    }
+
+    .circle2 {
+        width: 45vh;
+        height: 45vh;
     }
 
 
+}
+
+@media only screen and (max-width:360px){
+    .projects-container{
+        width:360px;
+    }
 }
