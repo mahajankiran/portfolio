@@ -90,7 +90,7 @@ body {
 
 .main-container {
     /* position: relative; */
-    background: url('/images/dark.jpg');
+    background: url('./images/dark.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     object-fit: center;
