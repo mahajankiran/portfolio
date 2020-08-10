@@ -47,7 +47,7 @@ body {
 
 .navbar .navbar-nav .nav-link {
     color: #1D4350;
-    font-weight: 600;
+    font-weight: bold;
     margin-right: 20px !important;
 
 
@@ -75,7 +75,7 @@ body {
 
 
 .navbar-toggler {
-    /* background-color: #12c2e9; */
+    background-color: #12c2e9 !important;
     border: none !important;
     outline: none !important;
     padding: 0px 5px !important;
@@ -117,28 +117,20 @@ body {
 
     font-size: 8vh !important;
     color: #2a5298;
-    /* color:#fff; */
-  
+   
     
 
 
-}
+}  
 
 .main-container .portfolio-content h3 {
 
     font-size: 5vh !important;
-    color: rgba(0, 0, 0, .5);
+    color:#fff !important;
 
 }
 
-.main-container .portfolio-image {
 
-    /* background: #fff; */
-
-
-    
-
-}
 
 .main-container .portfolio-image img {
     width: 100%;
@@ -379,6 +371,7 @@ a .btn-git:focus {
         display: flex;
         flex-direction: column;
         justify-content: center;
+        align-items: center;
 
     }
 
