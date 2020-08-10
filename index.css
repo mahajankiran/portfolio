@@ -92,7 +92,6 @@ body {
     width: 100%;
     margin: auto;
 
-    overflow: auto;
     height: 90vh;
     padding: 20px;
     display: grid;
@@ -367,16 +366,16 @@ a .btn-git:focus {
     }
 
     .main-container {
-        width:90%;
+        width: 90%;
         /* margin: 5px; */
-        padding:5px;
-    
+        padding: 5px;
+
     }
 
     .main-container .portfolio-content {
         align-items: center;
-        padding:0px;
-        order:2;
+        padding: 0px;
+        order: 2;
 
     }
 
