@@ -94,7 +94,7 @@ body {
     margin: auto;
     height: 90vh;
     padding: 20px;
-    margin-top:20px;
+    margin-top: 20px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 
@@ -109,6 +109,7 @@ body {
     align-items: center;
     justify-content: center;
     padding: 50px;
+    grid-gap: 1rem;
     /* background: #2a5298 ; */
 
 }
@@ -117,16 +118,16 @@ body {
 
     font-size: 8vh !important;
     color: #2a5298;
-   
-    
 
 
-}  
+
+
+}
 
 .main-container .portfolio-content h3 {
 
     font-size: 5vh !important;
-    color:#fff !important;
+    color: #fff !important;
 
 }
 
@@ -333,8 +334,23 @@ a .btn-git:focus {
     }
 
     .main-container {
+        width: 90%;
+        /* margin: 5px; */
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        padding: 5px;
+        /* grid-row-gap: 2rem; */
 
-        display: block;
+    }
+    .main-container .portfolio-content {
+        align-items: center;
+        padding: 0px;
+        order: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
 
     }
 
@@ -345,7 +361,7 @@ a .btn-git:focus {
 
 
 
-@media only screen and (max-width:400px) {
+@media only screen and (max-width:600px) {
     .projects-container {
         width: 100%;
     }
@@ -353,15 +369,16 @@ a .btn-git:focus {
     .main-container {
         width: 90%;
         /* margin: 5px; */
-        display:flex;
-        flex-direction:column;
-        height:70vh;
+        display: flex;
+        flex-direction: column;
+        height: auto;
         padding: 5px;
-        grid-row-gap: 2rem;
+        /* grid-row-gap: 2rem; */
 
     }
-    .navbar-nav .nav-link{
-        padding:10px;
+
+    .navbar-nav .nav-link {
+        padding: 10px;
     }
 
     .main-container .portfolio-content {
@@ -372,6 +389,7 @@ a .btn-git:focus {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        margin:80px 0px;
 
     }
 
