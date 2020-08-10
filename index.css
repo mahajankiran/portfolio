@@ -9,6 +9,7 @@ body {
     scroll-behavior: smooth;
     box-sizing: border-box;
     overflow-x: hidden;
+    background: #000;
 
 
 }
@@ -102,7 +103,7 @@ body {
 
 .main-container .portfolio-content {
 
-    background: #fff;
+    /* background: #fff; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -132,7 +133,7 @@ body {
 
 .main-container .portfolio-image {
 
-    background: #fff;
+    /* background: #fff; */
 
 
     
@@ -362,6 +363,7 @@ a .btn-git:focus {
         /* margin: 5px; */
         display:flex;
         flex-direction:column;
+        height:70vh;
         padding: 5px;
         grid-row-gap: 2rem;
 
