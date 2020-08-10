@@ -91,7 +91,6 @@ body {
 .main-container {
     width: 100%;
     margin: auto;
-
     height: 90vh;
     padding: 20px;
     display: grid;
@@ -348,17 +347,7 @@ a .btn-git:focus {
 
 }
 
-@media only screen and (min-width:992px) {
 
-
-    /* .navbar-nav{
-    margin-right: 200px !important;
-}
-
-.navbar-nav .nav-link{
-    margin:0px 20px;
-} */
-}
 
 @media only screen and (max-width:390px) {
     .projects-container {
@@ -368,6 +357,8 @@ a .btn-git:focus {
     .main-container {
         width: 90%;
         /* margin: 5px; */
+        display:flex;
+        flex-direction:column;
         padding: 5px;
 
     }
@@ -376,6 +367,9 @@ a .btn-git:focus {
         align-items: center;
         padding: 0px;
         order: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
 
     }
 
