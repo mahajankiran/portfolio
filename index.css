@@ -22,7 +22,7 @@ body {
     height: 35vh;
     /* background:#2a5298 ; */
     background: #fff;
-    opacity: 0.8;
+    opacity: 1;
     border-radius: 50%;
     z-index:-1;
 }
