@@ -266,8 +266,9 @@ body {
     /* overflow: auto; */
     height:180vh;
     margin: auto;
-    padding: 10rem;
+    padding: 2rem;
     display:grid;
+    
     
 }
 
@@ -278,8 +279,7 @@ body {
     height:50vh;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 0.8em;
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
@@ -334,11 +334,17 @@ a .btn-git:focus {
 
     .projectcard {
         display: block;
-        padding:0.8rem;
+        height:450px;
+
+    }
+
+    .projectcard>div{
+        height: 400px;
     }
 
     .projects-container {
         max-width: 970px;
+        height:100%;
         margin: 0;
     }
 
@@ -383,7 +389,12 @@ a .btn-git:focus {
 @media only screen and (max-width:768px) {
     .projects-container {
         width: 100%;
+    
     }
+    .project-card{
+        height:800px;
+    }
+
 
     .circlemain{
         width:20vh;
