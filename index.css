@@ -174,7 +174,7 @@ body {
 
 .project-image {
     
-    width: 200px;
+    width: 100%;
     height: 200px;
 }
 
@@ -243,7 +243,7 @@ body {
 
 
 
-.projectcard>div {
+.projectcard .project-content {
     padding: 1rem;
 
 
@@ -253,32 +253,36 @@ body {
     box-shadow: 0 10px 30px -15px rgba(0, 0, 0, .2);
 }
 
-.projectcard:nth-child(even) .project-image {
+/* .projectcard:nth-child(even) .project-image {
     order: 2;
-}
+} */
 
 
 
 
 
 .projects-container {
-    max-width: 1100px;
+    max-width: 800px;
     /* overflow: auto; */
-    height:180vh;
+    height:100vh;
     margin: auto;
-    padding: 2rem;
+    padding: 1rem;
     display:grid;
+    justify-content: center;
+    
     
     
 }
 
 .projectcard {
     border-radius:10px;
-    background: #2a5298;
+    background: #4269AA;
     width:100%;
-    height:50vh;
+    padding:10px;
+    height:40vh;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
     margin-bottom: 2rem;
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
@@ -338,7 +342,7 @@ a .btn-git:focus {
 
     }
 
-    .projectcard>div{
+    .projectcard .project-content{
         height: 400px;
     }
 
