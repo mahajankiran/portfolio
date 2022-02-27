@@ -38,7 +38,7 @@
             <a class="nav-link" href="index.html">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="education.html">Education</a>
+            <a class="nav-link" href="#">Education</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="projects.html">Projects</a>
@@ -50,23 +50,52 @@
       </div>
     </nav>
 
-    <div class="main-container">
-      <div class="portfolio-content">
-        <h1>Hi , I am Kiran Mahajan</h1>
-        <h3>I create Websites, UI and UX Designs</h3>
-      </div>
-      <div class="portfolio-image">
-        <img src="./images/landingpagesvg.svg" alt="landingsvg" />
-        <!-- <lottie-player
-          src="https://assets3.lottiefiles.com/packages/lf20_Ckw3Ws.json"
-          mode="bounce"
-          background="#000000"
-          speed="1"
-          loop
-          autoplay
-        ></lottie-player> -->
-      </div>
-    </div>
+   
+    <header class="main-projects" id="main-projects">
+        <h1><span>Projects</span></h1>
+        <div class="circle1 d-md-block d-none"></div>
+        <div class="circle2 d-md-block d-none"></div>
+      </header>
+      <main class="projects-container">
+        <section class="projectcard">
+          <img
+            src="./images/fee_mgmt_pic.svg "
+            alt="Card image notes"
+            class="project-image"
+          />
+          <div class="project-content">
+            <h3>Fee Management App</h3>
+            <p>Tech Stack:</p>
+              <p> <span class="tech-stack">Nodejs</span><span class="tech-stack">Express</span><span class="tech-stack">MySQL</span><span class="tech-stack">HTML/CSS</span><span class="tech-stack">EJS</span></p>
+            <a href="https://github.com/mahajankiran/fee_module">
+              <button class="btn-git">
+                <i class="fa fa-github"></i> Github
+              </button></a
+            >
+          </div>
+        </section>
+       
+        <section class="projectcard" data-aos="fade-in">
+          
+          <img
+            src="./images/Notes.svg "
+            alt="Card image notes"
+            class="project-image"
+          />
+        
+          <div class="project-content">
+            <h3>Notes App</h3>
+            <p>Tech Stack:</p>
+            <p> <span class="tech-stack">Nodejs</span><span class="tech-stack">Express</span><span class="tech-stack">MySQL</span><span class="tech-stack">HTML/CSS</span><span class="tech-stack">EJS</span></p>
+  
+            <a href="https://github.com/mahajankiran/Notes-App">
+              <button class="btn-git">
+                <i class="fa fa-github"></i> Github
+              </button></a
+            >
+          </div>
+        </section>
+      </main>
 
    
     <main class="education"></main>

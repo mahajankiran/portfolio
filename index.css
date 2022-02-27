@@ -5,7 +5,8 @@ body {
 
     font-family: 'Poppins', sans-serif;
     width: 100%;
-    height:300vh;
+    height:200vh;
+    overflow: auto;
     scroll-behavior: smooth;
     box-sizing: border-box;
     overflow-x: hidden;
@@ -105,7 +106,7 @@ body {
 .main-container {
     width: 100%;
     margin: auto;
-    height: 90vh;
+    height: 80vh;
     padding: 20px;
     margin-top: 20px;
     display: grid;
@@ -194,7 +195,7 @@ body {
     left: -110px;
     top: -150px;
     background: #2a5298;
-    opacity: 0.2;
+    opacity: 0.5;
     border-radius: 50%;
     /* z-index: -1; */
 
@@ -208,7 +209,7 @@ body {
     right: -200px;
     top: -530px;
     background: #2a5298;
-    opacity: 0.2;
+    opacity: 0.5;
     border-radius: 50%;
     /* z-index: -1; */
     overflow: none;
@@ -249,23 +250,21 @@ body {
 
 }
 
-.projectcard:hover {
-    /* box-shadow: 0 10px 30px -15px rgba(0, 0, 0, .2); */
 
-}
 
-/* .projectcard:nth-child(even) .project-image {
+.projectcard:nth-child(even) .project-image {
     order: 2;
-} */
+}
 
 
 
 
 
 .projects-container {
-    max-width: 800px;
+    max-width: 900px;
     /* overflow: auto; */
-    height:50vh;
+    border-radius: 10px;
+    height:100vh;
     margin: auto;
     padding: 1rem;
     display:grid;
@@ -278,17 +277,15 @@ body {
 }
 
 .projectcard {
-    border-radius:10px;
-    background: #000;
-
-    width:100%;
+     width:100%;
     padding:10px;
     height:40vh;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     margin-bottom: 2rem;
     /* box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22); */
-
+    background: #000;
+    border-radius: 5px;
 }
 
 
@@ -345,8 +342,12 @@ a .btn-git:focus {
     }
 
     .projectcard {
+    background: #495488;
+
         display: block;
         height:450px;
+        justify-content: center;
+        align-items: center;
 
     }
 
@@ -416,6 +417,10 @@ a .btn-git:focus {
     }
     .project-card{
         height:800px;
+        display:block;
+        justify-content: center;
+        align-items: center;
+        background:#495488;
     }
 
 
