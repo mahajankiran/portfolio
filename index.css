@@ -9,7 +9,7 @@ body {
     scroll-behavior: smooth;
     box-sizing: border-box;
     overflow-x: hidden;
-    background: rgb(10, 1, 1);
+    background: #000;
 
 
 }
@@ -250,7 +250,8 @@ body {
 }
 
 .projectcard:hover {
-    box-shadow: 0 10px 30px -15px rgba(0, 0, 0, .2);
+    /* box-shadow: 0 10px 30px -15px rgba(0, 0, 0, .2); */
+
 }
 
 /* .projectcard:nth-child(even) .project-image {
@@ -278,27 +279,33 @@ body {
 
 .projectcard {
     border-radius:10px;
-    background: #2a5298;
+    background: #000;
+
     width:100%;
     padding:10px;
     height:40vh;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     margin-bottom: 2rem;
-    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    /* box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22); */
+
 }
 
 
 
 
 .projectcard h3 {
-    color: #FFEFBA;
+    color: #fff;
+    /* font-weight:700px; */
+
     margin-bottom: 1rem;
 }
 
 
 .projectcard p {
     color: #fff;
+    margin-bottom:8px!important;
+
 }
 
 
@@ -387,6 +394,17 @@ a .btn-git:focus {
 
 
 
+
+}
+
+.tech-stack{
+
+    background:#fae398;
+    border-radius: 5px;
+    margin:3px;
+    color:#000;
+    font-size: 13px;
+    padding:3px;
 }
 
 
