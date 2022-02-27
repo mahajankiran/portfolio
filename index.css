@@ -9,7 +9,7 @@ body {
     scroll-behavior: smooth;
     box-sizing: border-box;
     overflow-x: hidden;
-    background: rgb(54, 53, 53);
+    background: rgb(10, 1, 1);
 
 
 }
@@ -174,7 +174,7 @@ body {
 
 .project-image {
     
-    width: 100%;
+    width: 200px;
     height: 200px;
 }
 
@@ -264,11 +264,13 @@ body {
 .projects-container {
     max-width: 800px;
     /* overflow: auto; */
-    height:100vh;
+    height:50vh;
     margin: auto;
     padding: 1rem;
     display:grid;
     justify-content: center;
+    /* opacity:0.5 !important; */
+
     
     
     
@@ -276,13 +278,12 @@ body {
 
 .projectcard {
     border-radius:10px;
-    background: #4269AA;
+    background: #2a5298;
     width:100%;
     padding:10px;
     height:40vh;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    justify-content: center;
     margin-bottom: 2rem;
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
@@ -348,7 +349,7 @@ a .btn-git:focus {
 
     .projects-container {
         max-width: 970px;
-        height:100%;
+        height:80vh;
         margin: 0;
     }
 
