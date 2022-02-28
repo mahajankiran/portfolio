@@ -416,6 +416,7 @@ i{
 i:hover{
 
     color:#495488;
+    border-color:#495488;
 
   
 
@@ -426,12 +427,20 @@ i:active{
     color:#495488;
 }
 
+.contact-header{
+
+    color:#9fa4c4;
+}
+
 
 
 @media only screen and (max-width:768px)
 {
     .main-container{
-        height:50vh;
+        height:70vh;
+    }
+    i{
+        margin:20px 20px;
     }
 }
 
