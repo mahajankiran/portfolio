@@ -1,16 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap");
-html{
-    height:110vh;
+html {
+  height: 110vh;
 }
 body {
   font-family: "Poppins", sans-serif;
   width: 100%;
-  height:110vh;
+  padding:10px;
+  height: auto;
   scroll-behavior: smooth;
   box-sizing: border-box;
   overflow-x: hidden;
-  background: #000;
+  background: #171717;
 }
 
 * {
@@ -100,7 +101,7 @@ body {
   justify-content: center;
   text-align: center;
   padding: 0.5rem;
-  margin-top:30px;
+  margin-top: 30px;
   position: relative;
   overflow: hidden;
 }
@@ -195,7 +196,8 @@ body {
   grid-template-columns: repeat(2, 1fr);
   margin-bottom: 2rem;
   /* box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22); */
-  background: #000;
+  /* background: #3A3B3C; */
+
   border-radius: 5px;
 }
 
@@ -228,17 +230,14 @@ a .btn-git:active {
   border: none;
 }
 
-@media only screen and(min-width:420px) and(max-width:650px)
-{
-    .main-container{
-        height:30vh;
-    }
-    .project-card{
-
-        width:400px;
-    }
+@media only screen and(min-width:420px) and(max-width:650px) {
+  .main-container {
+    height: 30vh;
+  }
+  .project-card {
+    width: 400px;
+  }
 }
-
 
 @media only screen and (max-width: 1200px) {
   .text {
@@ -250,7 +249,7 @@ a .btn-git:active {
   }
 
   .projectcard {
-    background: #495488;
+    background: #3a3b3c;
 
     display: block;
     height: 450px;
@@ -260,11 +259,10 @@ a .btn-git:active {
     height: 400px;
   }
 
-
   .projects-container {
     max-width: 970px;
     height: 110vh;
-  
+
     margin: 0;
   }
 
@@ -282,12 +280,10 @@ a .btn-git:active {
 
   .main-container {
     width: 90%;
-    /* margin: 5px; */
     display: flex;
     flex-direction: column;
     height: 100vh;
     padding: 5px;
-    /* grid-row-gap: 2rem; */
   }
 
   .main-container .portfolio-content {
@@ -309,33 +305,45 @@ a .btn-git:active {
   padding: 3px;
 }
 
-.contact-icons {
-  font-size: 20px;
+.icons{
+  font-size: 30px;
   color: #fff;
   cursor: pointer;
   border: 1px solid #fff;
   padding: 10px;
-  border-radius:50%;
+  border-radius: 50%;
   box-sizing: border-box;
-
-
 }
 
-.download-icons{
-  font-size: 20px;
-  color: #fff;
-  cursor: pointer;
-  border: 1px solid #fff;
-  padding: 10px;
-  border-radius:50%;
-  box-sizing: border-box;
 
-    
+.contact-list {
+  display: flex;
+  list-style: none;
 }
 
-.contact-icons:hover {
+.contact-list > li {
+  margin: 0 10px;
+}
+
+.icons:hover {
   color: #495488;
   border-color: #495488;
+}
+
+input {
+
+  border: none;
+  margin: 0 10px ;
+  outline: none;
+  width: 100%;
+  border-radius: 5px;
+  padding: 8px;
+  font-size: 1.1rem;
+}
+
+input[type="text"]:focus {
+  caret-color: #0077b5;
+  color: #0077b5;
 }
 
 .download-icons:hover {
@@ -351,18 +359,22 @@ i:active {
   color: #9fa4c4;
 }
 
-.heart-icon{
-  color:red;
+.heart-icon {
+  color: red;
 }
 
-
-
 @media only screen and (max-width: 992px) {
+
+
+  /* body{
+
+    height:230vh;
+  } */
   .projects-container {
     width: 100%;
     height: 180vh;
-    display:grid;
-    grid-template-columns: repeat(1,1fr);
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
     justify-content: center;
     margin: 0;
   }
@@ -371,7 +383,7 @@ i:active {
     display: block;
     /* justify-content: center;
     align-items: center; */
-    background: #495488;
+    background: #3a3b3c;
   }
 
   .circlemain {
@@ -426,25 +438,20 @@ i:active {
 }
 
 @media only screen and (max-width: 768px) {
-    .maindiv {
-      height: 50vh;
-    }
-    .contact-icons {
-      margin: 20px 20px;
-    }
+  .maindiv {
+    height: 50vh;
   }
-
+}
 
 @media only screen and (min-width: 1200px) {
-    .circle1 {
-      width: 40vh;
-      height: 40vh;
-    }
-  
-    .circle2 {
-      width: 70vh;
-      height: 70vh;
-      /* display: none; */
-    }
+  .circle1 {
+    width: 40vh;
+    height: 40vh;
   }
 
+  .circle2 {
+    width: 70vh;
+    height: 70vh;
+    /* display: none; */
+  }
+}
