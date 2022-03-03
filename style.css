@@ -1,10 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap");
 html {
-  height: 110vh;
+  height: auto;
 }
 body {
-  font-family: "Poppins", sans-serif;
+  /* font-family: "Poppins", sans-serif; */
+  /* font-family: "Russo One", sans-serif; */
   width: 100%;
   padding: 10px;
   height: auto;
@@ -12,6 +13,10 @@ body {
   box-sizing: border-box;
   overflow-x: hidden;
   background: #171717;
+}
+
+h1,h3,h2,h4,h5,a{
+  font-family: "Roboto Mono", monospace !important;
 }
 
 * {
@@ -57,7 +62,7 @@ body {
 .main-container {
   width: 100%;
   margin: auto;
-  height: 80vh;
+  height: 60vh;
   padding: 20px;
   margin-top: 20px;
   display: grid;
@@ -81,6 +86,27 @@ body {
   font-size: 8vh !important;
   color: #2a5298;
   font-weight: bold;
+}
+
+@keyframes waving-motion {
+  0% { transform: rotate( 0.0deg) }
+  10% { transform: rotate(18.0deg) }  
+  20% { transform: rotate(-6.0deg) }
+  30% { transform: rotate(15.0deg) }
+  40% { transform: rotate(-4.0deg) }
+  50% { transform: rotate(12.0deg) }
+  60% { transform: rotate( 0.0deg) }  
+100% { transform: rotate( 0.0deg) }
+}
+
+.hello-wave{
+
+  animation-name: waving-motion ;
+  animation-duration:2.5s ;
+  animation-iteration-count: infinite;
+  transform-origin: 75% 75%;
+  display: inline-block;
+
 }
 
 .main-container .portfolio-content h3 {
@@ -115,7 +141,7 @@ body {
 .main-projects h1 {
   font-size: 3rem;
   margin-bottom: 2rem;
-  line-height: 1.2;
+  /* line-height: 1.2; */
   color: #2a5298;
   font-weight: bold;
   position: relative;
@@ -144,6 +170,10 @@ body {
   border-radius: 50%;
   /* z-index: -1; */
   overflow: none;
+}
+
+p{
+  font-family: "Roboto Mono", monospace;
 }
 
 .main-projects h1::after {
@@ -370,14 +400,15 @@ a .btn-git:active {
   border-color: #B026FF;
 }
 
-.send-icon:hover {
+.send-icon:hover ,.download-icons:hover{
   color: #51ff0d;
   border-color: #51ff0d;
 }
 
-.download-icons:hover {
+/* .download-icons:hover {
   color: #51ff0d;
-}
+  borde
+} */
 
 .title{
   font-weight: 400;
@@ -470,7 +501,7 @@ input[type="text"]:focus {
     display: flex;
     flex-direction: column;
     padding: 5px;
-    height: 70vh;
+    height: 55vh;
     /* grid-row-gap: 2rem; */
   }
 
@@ -486,10 +517,10 @@ input[type="text"]:focus {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 80px 0px;
+    margin: 20px 0px;
   }
   .main-container .portfolio-image {
-    margin-bottom: 30px;
+    margin-bottom: 10px;
   }
 
   .main-container .portfolio-content h1 {
