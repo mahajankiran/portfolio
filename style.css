@@ -379,6 +379,13 @@ a .btn-git:active {
   color: #51ff0d;
 }
 
+.title{
+  font-weight: 400;
+  font-size: 1.4rem;
+  text-transform: none;
+  font-family: 'Sacramento' ,cursive !important;
+  color:#fff !important;
+}
 
 .linkedin-icon:focus {
   color: #1F51FF;
