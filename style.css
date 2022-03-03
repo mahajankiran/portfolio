@@ -6,7 +6,7 @@ html {
 body {
   font-family: "Poppins", sans-serif;
   width: 100%;
-  padding:10px;
+  padding: 10px;
   height: auto;
   scroll-behavior: smooth;
   box-sizing: border-box;
@@ -44,6 +44,7 @@ body {
 .navbar .navbar-nav .nav-link:focus {
   background: #fff;
   color: #2a5298;
+  border-radius:5px;
 }
 
 .navbar-toggler {
@@ -176,6 +177,26 @@ body {
   order: 2;
 }
 
+.projectcard  h3{
+
+  position: relative;
+
+
+
+}
+/* h3:after{
+
+  content:'\f129';
+  position: absolute;
+  background:rgb(173, 24, 24);
+  color:#fff;
+  top:10px;
+  right:-3px;
+  border-radius: 50%;
+  width: 20px;
+  height:20px;
+} */
+
 .projects-container {
   max-width: 900px;
   /* overflow: auto; */
@@ -305,17 +326,6 @@ a .btn-git:active {
   padding: 3px;
 }
 
-.icons{
-  font-size: 30px;
-  color: #fff;
-  cursor: pointer;
-  border: 1px solid #fff;
-  padding: 10px;
-  border-radius: 50%;
-  box-sizing: border-box;
-}
-
-
 .contact-list {
   display: flex;
   list-style: none;
@@ -325,15 +335,82 @@ a .btn-git:active {
   margin: 0 10px;
 }
 
-.icons:hover {
-  color: #495488;
-  border-color: #495488;
+.icons {
+  font-size: 20px;
+  color: #fff;
+  /* background:#B0DFE5; */
+  cursor: pointer;
+  border: 1px solid #fff;
+  padding: 10px;
+  border-radius: 50%;
+  /* box-sizing: border-box; */
 }
 
-input {
+.heart-icon {
+  color: #b941ff;
+  border-color:#b941ff;
 
+}
+
+.linkedin-icon:hover {
+  color: #1F51FF;
+  border-color:#1F51FF;
+}
+.mail-icon:hover {
+  color: #FF3131;
+  border-color:#FF3131;
+
+}
+.github-icon:hover {
+  color: #008443;
+  border-color: #008443;
+}
+.instagram-icon:hover {
+  color: #B026FF ;
+  border-color: #B026FF;
+}
+
+.send-icon:hover {
+  color: #51ff0d;
+  border-color: #51ff0d;
+}
+
+.download-icons:hover {
+  color: #51ff0d;
+}
+
+
+.linkedin-icon:focus {
+  color: #1F51FF;
+  border-color:#1F51FF;
+}
+.mail-icon:focus {
+  color: #FF3131;
+  border-color:#FF3131;
+
+}
+.github-icon:focus {
+  color: #008443;
+  border-color: #008443;
+}
+.instagram-icon:focus {
+  color: #B026FF ;
+  border-color: #B026FF;
+}
+
+.send-icon:focus {
+  color: #51ff0d;
+  border-color: #51ff0d;
+}
+
+.download-icons:focus {
+  color: #51ff0d;
+}
+
+
+input {
   border: none;
-  margin: 0 10px ;
+  margin: 0 10px;
   outline: none;
   width: 100%;
   border-radius: 5px;
@@ -346,26 +423,13 @@ input[type="text"]:focus {
   color: #0077b5;
 }
 
-.download-icons:hover {
-  color: #c471ed;
-  border-color: #c471ed;
-}
 
-i:active {
-  color: #495488;
-}
 
 .header {
   color: #9fa4c4;
 }
 
-.heart-icon {
-  color: red;
-}
-
 @media only screen and (max-width: 992px) {
-
-
   /* body{
 
     height:230vh;
