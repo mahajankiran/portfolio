@@ -159,6 +159,25 @@ a {
   height: 200px;
 }
 
+.profileimage{
+  animation-name: spin;
+  animation-duration: 4000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+@keyframes spin{
+
+  from{
+    transform: rotate(0deg);
+  }
+  to{
+    transform:rotate(360deg) ;
+  }
+
+
+
+}
+
 h1 {
   font-size: 3rem;
   margin-bottom: 2rem;
