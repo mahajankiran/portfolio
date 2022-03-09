@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap");
+
+
 html {
   height: auto;
 }
@@ -15,7 +17,12 @@ body {
   background: #000;
 }
 
-h1,h3,h2,h4,h5,a{
+h1,
+h3,
+h2,
+h4,
+h5,
+a {
   font-family: "Roboto Mono", monospace !important;
 }
 
@@ -49,7 +56,7 @@ h1,h3,h2,h4,h5,a{
 .navbar .navbar-nav .nav-link:focus {
   background: #fff;
   color: #2a5298;
-  border-radius:5px;
+  border-radius: 5px;
 }
 
 .navbar-toggler {
@@ -89,24 +96,38 @@ h1,h3,h2,h4,h5,a{
 }
 
 @keyframes waving-motion {
-  0% { transform: rotate( 0.0deg) }
-  10% { transform: rotate(18.0deg) }  
-  20% { transform: rotate(-6.0deg) }
-  30% { transform: rotate(15.0deg) }
-  40% { transform: rotate(-4.0deg) }
-  50% { transform: rotate(12.0deg) }
-  60% { transform: rotate( 0.0deg) }  
-100% { transform: rotate( 0.0deg) }
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(18deg);
+  }
+  20% {
+    transform: rotate(-6deg);
+  }
+  30% {
+    transform: rotate(15deg);
+  }
+  40% {
+    transform: rotate(-4deg);
+  }
+  50% {
+    transform: rotate(12deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
 }
 
-.hello-wave{
-
-  animation-name: waving-motion ;
-  animation-duration:2.5s ;
+.hello-wave {
+  animation-name: waving-motion;
+  animation-duration: 2.5s;
   animation-iteration-count: infinite;
   transform-origin: 75% 75%;
   display: inline-block;
-
 }
 
 .main-container .portfolio-content h3 {
@@ -138,7 +159,7 @@ h1,h3,h2,h4,h5,a{
   height: 200px;
 }
 
- h1 {
+h1 {
   font-size: 3rem;
   margin-bottom: 2rem;
   /* line-height: 1.2; */
@@ -172,7 +193,7 @@ h1,h3,h2,h4,h5,a{
   overflow: none;
 }
 
-p{
+p {
   font-family: "Roboto Mono", monospace;
 }
 
@@ -207,9 +228,6 @@ p{
   order: 2;
 }
 
-
-
-
 .projectcard {
   width: 100%;
   padding: 10px;
@@ -219,21 +237,17 @@ p{
   justify-content: center;
   align-items: center;
   border-radius: 5px;
-  margin:10px 0;
-  background:#C4B6B6;
+  margin: 10px 0;
+  background: #c4b6b6;
   /* background:#3D72A4;
   background:#CC99CC;
   background: #b2d4dd;
   background:#8B9A46; */
-  
-
-
-
 }
 
 .projectcard h3 {
-  color:rgb(75, 70, 70) ;
-  font-weight:700px !important;
+  color: rgb(75, 70, 70);
+  font-weight: 700px !important;
 
   margin-bottom: 1rem;
 }
@@ -279,15 +293,13 @@ a .btn-git:active {
   }
 
   .projectcard {
-/*     
+    /*     
   background:#B55400;
   background:#39311D;
   background:#541212; */
 
-    
     display: block;
     height: 450px;
-
   }
 
   .projectcard .project-content {
@@ -362,29 +374,28 @@ a .btn-git:active {
 
 .heart-icon {
   color: #b941ff;
-  border-color:#b941ff;
-
+  border-color: #b941ff;
 }
 
 .linkedin-icon:hover {
-  color: #1F51FF;
-  border-color:#1F51FF;
+  color: #1f51ff;
+  border-color: #1f51ff;
 }
 .mail-icon:hover {
-  color: #FF3131;
-  border-color:#FF3131;
-
+  color: #ff3131;
+  border-color: #ff3131;
 }
 .github-icon:hover {
   color: #008443;
   border-color: #008443;
 }
 .instagram-icon:hover {
-  color: #B026FF ;
-  border-color: #B026FF;
+  color: #b026ff;
+  border-color: #b026ff;
 }
 
-.send-icon:hover ,.download-icons:hover{
+.send-icon:hover,
+.download-icons:hover {
   color: #51ff0d;
   border-color: #51ff0d;
 }
@@ -394,30 +405,29 @@ a .btn-git:active {
   borde
 } */
 
-.title{
+.title {
   font-weight: 400;
   font-size: 1.4rem;
   text-transform: none;
-  font-family: 'Sacramento' ,cursive !important;
-  color:#fff !important;
+  font-family: "Sacramento", cursive !important;
+  color: #fff !important;
 }
 
 .linkedin-icon:focus {
-  color: #1F51FF;
-  border-color:#1F51FF;
+  color: #1f51ff;
+  border-color: #1f51ff;
 }
 .mail-icon:focus {
-  color: #FF3131;
-  border-color:#FF3131;
-
+  color: #ff3131;
+  border-color: #ff3131;
 }
 .github-icon:focus {
   color: #008443;
   border-color: #008443;
 }
 .instagram-icon:focus {
-  color: #B026FF ;
-  border-color: #B026FF;
+  color: #b026ff;
+  border-color: #b026ff;
 }
 
 .send-icon:focus {
@@ -428,7 +438,6 @@ a .btn-git:active {
 .download-icons:focus {
   color: #51ff0d;
 }
-
 
 input {
   border: none;
@@ -444,8 +453,6 @@ input[type="text"]:focus {
   caret-color: #0077b5;
   color: #0077b5;
 }
-
-
 
 .header {
   color: #9fa4c4;
@@ -469,7 +476,7 @@ input[type="text"]:focus {
     display: block;
     /* justify-content: center;
     align-items: center; */
-    background: #FFF; 
+    background: #fff;
   }
 
   .circlemain {
